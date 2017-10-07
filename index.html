@@ -18,14 +18,30 @@
       function initMap() {
         var options = {
       		center: {lat: -1.439063, lng: -48.4783852},
-        	zoom: 14}
+        	zoom: 14,
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+							style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+							position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+							position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					streetViewControl: true,
+					streetViewControlOptions: {
+							position: google.maps.ControlPosition.LEFT_BOTTOM
+					},
+					fullscreenControl: true
+				};
+				var map = new google.maps.Map(document.getElementById('map'), options);
 
-        var map = new google.maps.Map(document.getElementById('map'), options);
       }
     </script>
 	<script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7j0YfF6BTZ0Krc0pOeASV0094YDM6IgQ&callback=initMap"></script>
 	<div class="top">
-		<div><img onclick="openNav()" height="20%" class="menu" src="src\menu.png"></div>
+		<div><img onclick="openNav()" class="menu" src="src\menu.png"></div>
 		<div><a href="index.html"><img class="center" src="src\logo.png" alt="Estação Belém"></a></div>
 	</div>
 

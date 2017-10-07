@@ -28,11 +28,13 @@ img.menu{
 	margin: 8px;
 	float: left;
 	cursor: pointer;
+	height: 30px;
 }
 
 img.center {
     margin: auto;
     display:block;
+		height: 50px;
 }
 
 .sidenav {
@@ -42,7 +44,7 @@ img.center {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: #c9ffa0;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
